@@ -10,7 +10,7 @@ export class App extends Component {
     neutral: 0,
     bad: 0,
   };
-  click = event => {
+  clic = event => {
     const key = event.target.name;
     this.setState(prevState => {
       return {
@@ -53,7 +53,7 @@ export class App extends Component {
         <Sections title="Please leave feedback">
           <FeedbackOptions
             options={['good', 'neutral', 'bad']}
-            onLeaveFeedback={this.click}
+            onLeaveFeedback={this.clic}
           />
         </Sections>
 
